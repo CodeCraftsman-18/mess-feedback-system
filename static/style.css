@@ -1,0 +1,33 @@
+
+/* Color palette: lime green, dark slate, amber */
+:root{
+  --primary: #32CD32;
+  --dark: #2F4F4F;
+  --amber: #FFB300;
+  --bg1: #f9fff9;
+  --bg2: #e8fff0;
+}
+body.bg-gradient{
+  background: linear-gradient(120deg, var(--bg1), var(--bg2));
+  min-height:100vh;
+  color: var(--dark);
+  font-family: 'Poppins', sans-serif;
+}
+.topbar{ background: linear-gradient(90deg, rgba(47,79,79,0.95), rgba(50,205,50,0.1)); box-shadow: 0 6px 18px rgba(47,79,79,0.15); }
+.navbar-brand .logo{ font-size:22px; margin-right:8px; }
+.hero .card.menu-card{ border-left:4px solid var(--primary); }
+.btn-cta{ background: linear-gradient(90deg,var(--primary), #28b428); color: #fff; border:none; }
+.btn-cta:hover{ transform: translateY(-2px); box-shadow: 0 8px 20px rgba(50,205,50,0.12); }
+.btn-outline-cta{ border:2px solid rgba(255,179,0,0.12); color: var(--dark); }
+.stat-card{ background: linear-gradient(180deg,#fff,#f7fff7); border-left:4px solid var(--amber); }
+.menu-card .list-group-item{ border: none; }
+.menu-card .badge{ font-weight:600; }
+.card{ border-radius:12px; }
+.badge-box .badge{ background: linear-gradient(90deg,#4caf50,#8bc34a); color:#fff; padding:6px 8px; border-radius:8px; }
+.star-rating { display:flex; gap:6px; direction: rtl; justify-content:flex-end; }
+.star-rating input { display:none; }
+.star-rating label { font-size:22px; color:#ddd; cursor:pointer; transition: transform .12s ease; }
+.star-rating input:checked ~ label, .star-rating label:hover, .star-rating label:hover ~ label { color: #ffb300; transform: translateY(-4px); }
+.badge.bg-amber{ background: linear-gradient(90deg,var(--amber), #ff9f00); color:#fff; }
+table.table td, table.table th{ vertical-align: middle; }
+.shadow-sm{ box-shadow: 0 6px 18px rgba(47,79,79,0.06); }
